@@ -593,7 +593,6 @@ impl LinkAddRequest {
                 Some(InfoData::Vlan(vec![InfoVlan::Id(vlan_id)])),
             )
             .append_nla(Nla::Link(index))
-            .up()
     }
 
     /// Create macvlan on a link.
